@@ -1,5 +1,5 @@
 import numpy as np
-from Utils import basic_preprocessing, generate_phi
+from general import basic_preprocessing, generate_phi
 
 
 def alternate(k, C, V, u, v, row, pred):
