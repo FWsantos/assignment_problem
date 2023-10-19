@@ -1,5 +1,5 @@
 import numpy as np
-from general import basic_preprocessing, generate_phi
+from general import basic_preprocessing, gen_phi
 
 
 def alternate(k, C, V, u, v, row, pred):
@@ -33,7 +33,7 @@ def alternate(k, C, V, u, v, row, pred):
 def hungarian_n4(C):
     u, v, row = basic_preprocessing(C)
 
-    phi = generate_phi(row)
+    phi = gen_phi(row)
     n = C[0].size
     U = set(range(n))
     V = set(range(n))
@@ -79,7 +79,7 @@ C = np.array([
 
 row = hungarian_n4(C)
 # u, v, row = basic_preprocessing(C)
-phi = generate_phi(row)
+phi = gen_phi(row)
 
 # print(x)
 # print('u = ', u)

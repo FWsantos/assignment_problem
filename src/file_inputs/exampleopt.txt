@@ -1,0 +1,4 @@
+Data file    Optimal solution value
+example_1    17
+example_2    140
+example_3    17
