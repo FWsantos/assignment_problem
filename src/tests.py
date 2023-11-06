@@ -1,7 +1,13 @@
 import time
-from general import gen_phi, ler_arquivo, ler_data_set
+from general import gen_phi, ler_arquivo
 from hungarian_n3 import hungarian_n3
 
+def ler_data_set():
+    path = "src/file_inputs/assign"
+    input_list = []
+    for i in range(1, 9):
+        input_list.append(path + str(i) + "00.txt")
+    return input_list
 
 def test_hungarian_n3():
     data_set = ler_data_set()
@@ -28,4 +34,3 @@ def test_hungarian_n3():
             f.write(f'run_time = {run_time:.2f} seconds\n\n')
 
 
-test_hungarian_n3()
