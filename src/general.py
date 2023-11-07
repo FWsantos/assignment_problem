@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def basic_preprocessing(C):
     # n recebe o tamanho da primeira linha da matriz C
     n = C[0].size
@@ -49,7 +48,9 @@ def ler_arquivo(file_path):
             for elemento in elementos:
                 # Imprime o elemento
                 C.append(int(elemento))
-
+    
+    print('n = ', n)
+    print('C.size', len(C))
     C = np.reshape(C, (n, n))
 
     return C
