@@ -1,28 +1,24 @@
 import time
 import datetime
+from scipy.optimize import linprog
 from general import gen_phi, ler_arquivo
 from hungarian_n3 import hungarian_n3
 
-def ler_data_set(data_set = 0):
+
+def ler_data_set():
     path = ""
     name_list = []
-    if data_set == 0:
-        path = "src/file_inputs/assign"
-        name_list = range(1, 9)
-    elif data_set == 1:
-        path = "src/file_inputs/assignp"
-        name_list = [8, 15, 30, 50] 
+    path = "src/file_inputs/assign"
+    name_list = range(1, 9)
     input_list = []
     for i in name_list:
         input_list.append(path + str(i) + "00.txt")
     return input_list
 
-def test_hungarian_n3(ds = 0):
+
+def test_hungarian_n3():
     data_set = []
-    if ds == 0:
-        data_set = ler_data_set()
-    elif ds == 1:
-        data_set = ler_data_set(1)
+    data_set = ler_data_set()
 
     with open('output.txt', 'w') as f:
         date_now = datetime.datetime.now()
@@ -50,4 +46,5 @@ def test_hungarian_n3(ds = 0):
             f.write(f'result = {result}\n')
             f.write(f'run_time = {run_time:.2f} seconds\n\n')
 
-
+# def test_with_linprog():
+    # import numpy as np

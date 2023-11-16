@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def basic_preprocessing(C):
     # n recebe o tamanho da primeira linha da matriz C
     n = C[0].size
@@ -41,18 +42,23 @@ def gen_phi(row):
 def ler_arquivo(file_path):
     C = []
     with open(file_path, 'r') as f:
+        # Captura o valor de n
         n = int(f.readline())
+        # Percorre o restante das linhas do arquivo
         for linha in f:
             # Separa os elementos da linha em uma lista
             elementos = linha.split()
+            # Percorre os elementos da linha
             for elemento in elementos:
-                # Imprime o elemento
+                # Adiciona o elemento a lista C
                 C.append(int(elemento))
-    
-    print('n = ', n)
-    print('C.size', len(C))
-    C = np.reshape(C, (n, n))
 
+    # print('n = ', n)
+    # print('C.size', len(C))
+
+    # Reorganiza a lista C em uma matriz nxn
+    C = np.reshape(C, (n, n))
+    # Retorna a matriz C
     return C
 
 
