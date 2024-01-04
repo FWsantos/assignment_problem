@@ -1,3 +1,3 @@
-from tests import test_hungarian_n3
+from tests import test
 
-test_hungarian_n3()
+test(1)

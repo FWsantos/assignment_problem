@@ -1,7 +1,6 @@
 import numpy as np
 from general import basic_preprocessing, gen_phi
 
-
 def alternate(k, C, V, u, v, row, pred):
     SU = set()
     LV = set()
@@ -68,7 +67,6 @@ def hungarian_n4(C):
                 v[list(LV)] -= delta
 
     return row
-
 
 C = np.array([
     [7, 9, 8, 9],

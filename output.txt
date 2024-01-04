@@ -1,33 +1,33 @@
-2023-11-16 06:38:25
+2024-01-03 23:43:57
 file = src/file_inputs/assign100.txt
 result = 305
-run_time = 0.07 seconds
+run_time = 0.03 seconds
 
 file = src/file_inputs/assign200.txt
 result = 475
-run_time = 0.36 seconds
+run_time = 0.14 seconds
 
 file = src/file_inputs/assign300.txt
 result = 626
-run_time = 1.19 seconds
+run_time = 0.38 seconds
 
 file = src/file_inputs/assign400.txt
 result = 804
-run_time = 2.49 seconds
+run_time = 1.26 seconds
 
 file = src/file_inputs/assign500.txt
 result = 991
-run_time = 5.18 seconds
+run_time = 2.77 seconds
 
 file = src/file_inputs/assign600.txt
 result = 1176
-run_time = 5.91 seconds
+run_time = 2.99 seconds
 
 file = src/file_inputs/assign700.txt
 result = 1362
-run_time = 8.87 seconds
+run_time = 3.55 seconds
 
 file = src/file_inputs/assign800.txt
 result = 1552
-run_time = 7.09 seconds
+run_time = 4.05 seconds
 
