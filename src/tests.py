@@ -6,7 +6,7 @@ from scipy.optimize import linprog
 from general import gen_phi, read_file
 from hungarian_n3 import hungarian_n3
 
-def read_data_set():
+def get_files_path():
     path = ""
     name_list = []
     path = "src/file_inputs/assign"
@@ -16,10 +16,9 @@ def read_data_set():
         input_list.append(path + str(i) + "00.txt")
     return input_list
 
-
 def test_hungarian_n3():
     data_set = []
-    data_set = read_data_set()
+    data_set = get_files_path()
 
     with open('output.txt', 'w') as f:
         date_now = datetime.datetime.now()
@@ -44,9 +43,9 @@ def test_hungarian_n3():
 def test(type_test):
     if type_test == 1:
         test_hungarian_n3()
-    else:
-        pass
-    
+    else :
+        print("Invalid type test!!!")
+
     try:
         result = None
         if(platform.system() == 'Windows'):
@@ -56,5 +55,4 @@ def test(type_test):
         print(result)
     except subprocess.CalledProcessError as e:
         print("Error while executing the 'type' command: {e}")
-# def test_with_linprog():
-    # import numpy as np
+
