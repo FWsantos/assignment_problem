@@ -3,18 +3,8 @@ import datetime
 import subprocess
 import platform
 from scipy.optimize import linprog
-from general import gen_phi, read_file
+from general import gen_phi, read_file, get_files_path
 from hungarian_n3 import hungarian_n3
-
-def get_files_path():
-    path = ""
-    name_list = []
-    path = "src/file_inputs/assign"
-    name_list = range(1, 9)
-    input_list = []
-    for i in name_list:
-        input_list.append(path + str(i) + "00.txt")
-    return input_list
 
 def test_hungarian_n3():
     data_set = []

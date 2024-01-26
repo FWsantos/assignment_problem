@@ -34,3 +34,12 @@ def read_file(file_path):
     C = np.reshape(C, (n, n))
     return C
 
+def get_files_path():
+    path = ""
+    name_list = []
+    path = "src/file_inputs/assign"
+    name_list = range(1, 9)
+    input_list = []
+    for i in name_list:
+        input_list.append(path + str(i) + "00.txt")
+    return input_list
