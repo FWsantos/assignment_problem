@@ -1,4 +1,5 @@
 from tests import test
 
-test()
-test(1)
+# test()
+test(type_set = 1)
+# test(1)
