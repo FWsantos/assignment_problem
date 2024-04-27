@@ -3,7 +3,6 @@ import datetime
 import subprocess
 import platform
 import numpy as np
-from scipy.optimize import linprog
 from general import gen_phi, read_file, read_big_file, get_files_path
 from hungarian_n3 import hungarian_n3
 

@@ -19,8 +19,8 @@ for i in range(n):
         row[i * n + j] = 1
     A_eq.append(row)
     b_eq.append(1)
-
-# Cada coluna deve somar 1
+55
+# Cada coluna deve somar 1/
 for j in range(n):
     col = [0] * n * n
     for i in range(n):
