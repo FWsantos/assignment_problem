@@ -1,0 +1,21 @@
+2024-05-20 15:31:55
+file = src/file_inputs/assignp800.txt
+result = 2239.0
+run_time = 2.88 seconds
+--------------------------------------------------
+
+file = src/file_inputs/assignp1500.txt
+result = 5839.0
+run_time = 13.42 seconds
+--------------------------------------------------
+
+file = src/file_inputs/assignp3000.txt
+result = 18696.0
+run_time = 63.91 seconds
+--------------------------------------------------
+
+file = src/file_inputs/assignp5000.txt
+result = 48533.0
+run_time = 212.60 seconds
+--------------------------------------------------
+
