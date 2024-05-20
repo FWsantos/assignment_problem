@@ -1,4 +1,6 @@
-from tests import test
+from src.controller import exec
 
-test()
-test(1)
+# test()
+for i in range(2):
+    for j in range(2):
+        exec(type_set = i, type_test = j)
