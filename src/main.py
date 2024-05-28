@@ -1,4 +1,4 @@
-from src.controller import exec
+from controller import exec
 
 # test()
 for i in range(2):

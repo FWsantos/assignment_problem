@@ -3,8 +3,8 @@ import numpy as np
 def basic_preprocessing(C):
     n = C[0].size
     x = np.zeros((n, n), dtype=np.int16)
-    u = C.min(axis=1)
-    v = (C-u[:, np.newaxis]).min(axis=0)
+    u = C.min(axis=1).astype(np.float64)
+    v = (C - u[:, np.newaxis]).min(axis=0).astype(np.float64)
     row = np.full(n, -1)
 
     for i in range(n):
