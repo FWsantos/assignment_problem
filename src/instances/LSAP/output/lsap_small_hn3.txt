@@ -1,0 +1,41 @@
+2024-08-17 15:42:50
+file = src/instances/LSAP/input/assign100.txt
+result = 305.0
+run_time = 0.02 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assign200.txt
+result = 475.0
+run_time = 0.10 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assign300.txt
+result = 626.0
+run_time = 0.34 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assign400.txt
+result = 804.0
+run_time = 1.14 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assign500.txt
+result = 991.0
+run_time = 2.57 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assign600.txt
+result = 1176.0
+run_time = 2.77 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assign700.txt
+result = 1362.0
+run_time = 3.29 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assign800.txt
+result = 1552.0
+run_time = 3.73 seconds
+--------------------------------------------------
+
