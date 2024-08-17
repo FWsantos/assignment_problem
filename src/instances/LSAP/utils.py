@@ -7,14 +7,14 @@ def read_file(file_path):
         for line in f:
             items = line.split()
             for item in items:
-                C.append(int(item))
+                C = np.append(C, int(item))
     C = np.reshape(C, (n, n))
     return C
 
 def get_files_path(data_set = 0):
     path = ""
     name_list = []
-    path = "src/file_inputs/assign"
+    path = "src/instances/LSAP/input/assign"
     
     if data_set == 0:
         name_list = range(1, 9)
@@ -32,7 +32,7 @@ def read_big_file(file_path):
 
     with open(file_path, 'r') as f:
         n = int(f.readline())
-        C = np.full((n, n), np.inf) 
+        C = np.full((n, n), np.inf)
 
         for line in f:
             items = line.split()

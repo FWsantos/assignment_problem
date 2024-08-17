@@ -1,0 +1,21 @@
+2024-08-17 16:22:46
+file = src/instances/LSAP/input/assignp800.txt
+result = 2239.0
+run_time = 3.12 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assignp1500.txt
+result = 5839.0
+run_time = 14.78 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assignp3000.txt
+result = 18696.0
+run_time = 70.32 seconds
+--------------------------------------------------
+
+file = src/instances/LSAP/input/assignp5000.txt
+result = 48533.0
+run_time = 238.43 seconds
+--------------------------------------------------
+

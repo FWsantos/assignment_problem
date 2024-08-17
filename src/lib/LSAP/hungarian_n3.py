@@ -1,5 +1,5 @@
 import numpy as np
-from general import basic_preprocessing, gen_phi
+from lib.LSAP.utils import basic_preprocessing, gen_phi
 
 def augment(k, C, V, u, v, row, pred):
     """
