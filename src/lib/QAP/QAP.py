@@ -1,3 +1,5 @@
+import numpy as np
+
 def qap_linearized(A, B, C):
     n = A.shape[0]
     D = np.zeros((n, n))
@@ -7,7 +9,11 @@ def qap_linearized(A, B, C):
             soma = 0
             for k in range(n):
                 for l in range(n):
-                    soma += A[i, k] * B[j, l]:
-            D[i, j] = soma + C[i, j]
+                    soma += A[i, k] * B[j, l]
+            if C == None:
+                D[i, j] = soma
+            else:
+                D[i, j] = soma + C[i, j]
 
     return D
+
