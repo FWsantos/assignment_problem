@@ -1,6 +1,6 @@
 import numpy as np
 from instances.QAP.utils import read_qapdata
-from lib.QAP.QAP import qap_linearized
+from lib.QAP.qap_hungarian import qap_linearized
 from lib.LSAP.hungarian_n3 import hungarian_n3, gen_phi
 
 file_path = 'src/instances/QAP/qapdata/chr12b.dat'
